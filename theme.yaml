@@ -1,25 +1,23 @@
 apiVersion: theme.halo.run/v1alpha1
 kind: Theme
 metadata:
-  name: theme-earth
+  name: theme-dev
   annotations:
-    # Add supports for Halo App Store
-    # https://halo.run/store/apps/app-KgWqR
     "store.halo.run/app-id": "app-KgWqR"
 spec:
-  displayName: Earth
+  displayName: JIULANG-Earth
   author:
-    name: Halo
+    name: JIULANG
     website: https://www.halo.run
   description: Default theme for Halo 2.0
-  logo: https://www.halo.run/logo
-  homepage: https://www.halo.run/store/apps/app-KgWqR
-  repo: https://github.com/halo-dev/theme-earth
-  issues: https://github.com/halo-dev/theme-earth/issues
-  settingName: "theme-earth-setting"
-  configMapName: "theme-earth-configMap"
+  logo: /themes/theme-dev/assets/images/logo.png
+  homepage: https://www.jiulang9.com
+  repo: https://github.com/JIULANG9/theme-earth
+  issues: https://github.com/JIULANG9/theme-earth/issues
+  settingName: "theme-dev-setting"
+  configMapName: "theme-dev-configMap"
   version: 1.8.0
   requires: ">=2.8.0"
   license:
     - name: "GPL-3.0"
-      url: "https://github.com/halo-dev/theme-earth/blob/main/LICENSE"
+      url: "https://github.com/JIULANG9/theme-earth/blob/main/LICENSE"
