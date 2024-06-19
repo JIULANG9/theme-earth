@@ -1,0 +1,20 @@
+apiVersion: v1alpha1
+kind: AnnotationSetting
+metadata:
+  generateName: annotation-setting-
+spec:
+  targetRef:
+    group: content.halo.run
+    kind: Post
+  formSchema:
+    - $formkit: "select"
+      name: "post_style"
+      label: "内容风格"
+      value: "md-purple"
+      options:
+        - value: "md-pink"
+          label: 少女粉
+        - value: "md-purple"
+          label: 凝夜紫
+        - value: "md-bule"
+          label: 科技蓝
