@@ -6,7 +6,7 @@ build: clean
 	echo "Collect theme dist"
 	mkdir dist
 	cp -r templates dist
-	cp theme.yaml settings.yaml README.md dist
+	cp theme.yaml annotation-setting.yaml settings.yaml README.md dist
 
 clean:
 	echo "Clean dist folder"

@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 kind: Setting
 metadata:
-  name: theme-earth-setting
+  name: theme-dev-setting
 spec:
   forms:
     - group: layout
@@ -157,6 +157,8 @@ spec:
                   value: categories
                 - label: 文章标签
                   value: tags
+                - label: 二维码
+                  value: qrcode
 
         - $formkit: group
           name: profile
@@ -166,7 +168,19 @@ spec:
             - $formkit: attachment
               name: logo
               label: 站点资料 Logo
-
+        - $formkit: group
+          name: qrcodegroup
+          value:
+            logo:
+          children:
+            - $formkit: text
+              name: qrcode_title
+              label: 二维码标题
+              value: "微信公众号"
+            - $formkit: attachment
+              name: qrcode_url
+              label: 二维码图片
+              value: ""
         - $formkit: repeater
           name: social_media
           label: 社交媒体

@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 kind: AnnotationSetting
 metadata:
-  generateName: annotation-setting-
+  name: my-annotation-setting
 spec:
   targetRef:
     group: content.halo.run
