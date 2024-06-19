@@ -1,0 +1,409 @@
+/*自定义样式，实时生效*/
+
+/* 全局属性
+ * 页边距 padding:30px;
+ * 全文字体 font-family:ptima-Regular;
+ * 英文换行 word-break:break-all;
+ */
+ #md-bule {
+  font-family: Optima-Regular, Optima, PingFangTC-Light, PingFangSC-light, PingFangTC-light;
+}
+
+/* 段落，下方未标注标签参数均同此处
+ * 上边距 margin-top:5px;
+ * 下边距 margin-bottom:5px;
+ * 行高 line-height:26px;
+ * 词间距 word-spacing:3px;
+ * 字间距 letter-spacing:3px;
+ * 对齐 text-align:left;
+ * 颜色 color:#3e3e3e;
+ * 字体大小 font-size:16px;
+ * 首行缩进 text-indent:2em;
+ */
+#md-bule p {
+  margin: 10px 0px;
+  letter-spacing: 2px;
+  font-size: 17px;
+  word-spacing: 2px;
+}
+
+
+#md-bule h1,
+#md-bule h2,
+#md-bule h3,
+#md-bule h4,
+#md-bule h5,
+#md-bule h6 {
+    color: #0e88eb;
+    margin-bottom: 19px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+
+#md-bule h6:after,
+#md-bule h6:before {
+    color: var(--md-style-bule);
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+
+#md-bule h1,
+#md-bule h2 {
+    display: inline;
+    background: linear-gradient(to bottom, transparent 60%, var(--md-style-bule) 0)
+}
+
+#md-bule h1:after,
+#md-bule h1:before,
+#md-bule h2:after,
+#md-bule h2:before {
+    content: '';
+    display: block
+}
+
+#md-bule h1:before,
+#md-bule h2:before {
+    margin-top: 30px
+}
+
+#md-bule h1:after,
+#md-bule h2:after {
+    margin-bottom: 20px
+}
+
+#md-bule h1 {
+    font-size: 1.45em;
+    font-weight: 700
+}
+
+#md-bule h2 {
+    font-size: 1.25em;
+    font-weight: 600
+}
+
+#md-bule h3,
+#md-bule h4,
+#md-bule h5 {
+    position: relative;
+    padding-left: 12px
+}
+
+#md-bule h3:before,
+#md-bule h4:before,
+#md-bule h5:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 0;
+    width: 4px;
+    border-radius: 2px;
+    background: #0e88eb
+}
+
+#md-bule h3:hover,
+#md-bule h4:hover,
+#md-bule h5:hover {
+    padding-left: 16px
+}
+
+ h3 {
+    margin: 25px 0 18px;
+    font-size: 1.2em;
+    font-weight: 600
+}
+
+.footer-container .icon-spot i,
+#md-bule h4 {
+    font-size: 1.1em
+}
+
+#md-bule h5,
+#md-bule h6 {
+    font-size: 1em
+}
+
+#md-bule h6:after,
+#md-bule h6:before {
+    color: #0e88eb;
+    font-weight: 600
+}
+
+#md-bule h6:before {
+    content: '「';
+    margin-right: 5px
+}
+
+#md-bule h6:after {
+    content: '」';
+    margin-left: 5px
+}
+
+#md-bule h6:hover:before {
+    margin-left: -3px;
+    margin-right: 8px
+}
+
+#md-bule h6:hover:after {
+    margin-left: 8px
+}
+
+/* 无序列表整体样式
+ * list-style-type: square|circle|disc;
+ */
+#md-bule ul {
+}
+
+/* 有序列表整体样式
+ * list-style-type: upper-roman|lower-greek|lower-alpha;
+ */
+#md-bule ol {
+}
+
+/* 列表内容，不要设置li
+ */
+#md-bule li section {
+  font-size: 15px;
+}
+
+#md-bule blockquote {
+  padding: 8px 15px;
+  color: var(--md-dark-b);
+  background: var(--md-style-bule);
+  border-left: 5px solid #0e88eb;
+  border-radius: 6px
+}
+
+#md-bule blockquote>:not(:last-child) {
+  margin-bottom: 6px !important
+}
+
+#md-bule blockquote>:last-child {
+  margin: 0 !important
+}
+
+/* 引用
+ * 左边缘颜色 border-left-color:black;
+ * 背景色 background:gray;
+ */
+#md-bule .multiquote-1 {
+  font-style:normal;
+  border-left:none;
+  padding:10px;
+  position:relative;
+  line-height:1.8;
+  border-radius:0px 0px 10px 10px;
+  color: #0e88eb;
+  background:#fff;
+  box-shadow:#84A1A8 0px 10px 15px;
+}
+#md-bule .multiquote-1:before {
+  content:"★ ";
+  display:inline;
+  color: #0e88eb;
+  font-size:4em;
+  font-family:Arial,serif;
+  line-height:1em;
+  font-weight:700;
+}
+
+/* 引用文字 */
+#md-bule .multiquote-1 p {
+  color: #0e88eb;
+  font-size:15px;
+  display:inline;
+}
+#md-bule .multiquote-1:after {
+  content:"”";
+  float:right;
+  display:inline;
+  color:#0e88eb;
+  font-size:3em;
+  line-height:1em;
+  font-weight:500;
+}
+
+/* 链接 
+ * border-bottom: 1px solid #009688;
+ */
+#md-bule a {
+  color: #0e88eb;
+  border-bottom: 0px solid #ff3502;
+  font-family:STHeitiSC-Light;
+}
+
+/* 加粗 */
+#md-bule strong {
+  font-weight: border;
+  color: #0e88eb;
+}
+
+/* 斜体 */
+#md-bule em {
+  color: #0e88eb;
+  letter-spacing:0.3em;
+}
+
+/* 加粗斜体 */
+#md-bule em strong {
+  color: #0e88eb;
+  letter-spacing:0.3em;
+}
+
+/* 删除线 */
+#md-bule del {
+}
+ 
+/* 分隔线
+ * 粗细、样式和颜色
+ * border-top:1px solid #3e3e3e;
+ */
+#md-bule hr {
+  height:1px;
+  padding:0;
+  border:none;
+  border-top:medium solidid #333;
+  text-align:center;
+  background-image:linear-gradient(to right,rgba(248,57,41,0),#0e88eb,rgba(248,57,41,0));
+}
+
+/* 图片
+ * 宽度 width:80%;
+ * 居中 margin:0 auto;
+ * 居左 margin:0 0;
+ */
+#md-bule img {
+  border-radius:0px 0px 5px 5px;
+  display:block;
+  margin:20px auto;
+  width:85%;
+  height:100%;
+  object-fit:contain;
+  box-shadow:#84A1A8 0px 10px 15px;
+}
+
+/* 图片描述文字 */
+#md-bule figcaption {
+  display:block;
+  font-size:13px;
+  font-family:PingFangSC-Light;
+}
+
+/* 行内代码 */
+#md-bule p code, #md-bule li code {
+
+}
+
+/* 非微信代码块
+ * 代码块不换行 display:-webkit-box !important;
+ * 代码块换行 display:block;
+ */
+#md-bule pre code {
+}
+
+/*
+* 表格内的单元格
+* 字体大小 font-size: 16px;
+* 边框 border: 1px solid #ccc;
+* 内边距 padding: 5px 10px;
+*/
+#md-bule table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all
+}
+
+
+#md-bule table th {
+  font-weight: bold;
+  background: var(--md-style-bule)
+}
+
+#md-bule table th,
+#md-bule table td {
+  padding: 6px 13px;
+  border: 1px solid var(--md-tb-border)
+}
+/* #md-purple table thead th {
+ 
+} */
+
+#md-bule table tr {
+  background-color: var(--md-tb-white);
+  border-top: 1px solid var(--md-tb-border)
+}
+
+#md-bule table tr:nth-child(2n) {
+  background-color: var(--md-tb-gray);
+}
+/* 脚注文字 */
+#md-bule .footnote-word {
+  color: #2d59b3;
+}
+
+/* 脚注上标 */
+#md-bule .footnote-ref {
+  color: #6a88c5;
+}
+
+/* 非微信代码块
+ * 代码块不换行 display:-webkit-box !important;
+ * 代码块换行 display:block;
+ */
+#md-bule pre code {
+}
+
+/* 脚注文字 */
+#md-bule .footnote-word {
+  color: #0e88eb;
+}
+
+/* 脚注上标 */
+#md-bule .footnote-ref {
+  color: #0e88eb;
+}
+
+/*脚注链接样式*/
+#md-bule .footnote-item em {
+  color: #082a71;
+  font-size:13px;
+}
+
+/* "参考资料"四个字 
+ * 内容 content: "参考资料";
+ */
+#md-bule .footnotes-sep:before {
+}
+
+/* 参考资料编号 */
+#md-bule .footnote-num {
+}
+
+/* 参考资料文字 */
+#md-bule .footnote-item p { 
+}
+
+/* 参考资料解释 */
+#md-bule .footnote-item p em {
+}
+
+/* 行间公式
+ * 最大宽度 max-width: 300% !important;
+ */
+#md-bule .block-equation svg {
+}
+
+/* 行内公式
+ */
+#md-bule .inline-equation svg {  
+}
+
+/* 滑动图片
+ */
+#md-bule .imageflow-img {
+  display: inline-block;
+  width:100%;
+  margin-bottom: 0;
+}
